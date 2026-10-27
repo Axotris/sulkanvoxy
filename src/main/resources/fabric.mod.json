@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "sulkanvoxy",
+	"version": "${version}",
+	"name": "Sulkan Voxy",
+	"description": "Bridges Sulkan's native Vulkan shader packs onto Voxy's LOD terrain, so shaders apply to every chunk: vanilla and LOD.",
+	"authors": [
+		"Axotris"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"icon": "assets/sulkanvoxy/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"org.axotris.sulkanvoxy.SulkanVoxyClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "sulkanvoxy.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"sulkan": ">=0.6.0",
+		"voxy": "*",
+		"sodium": ">=0.9.2"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"package": "org.axotris.sulkanvoxy.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"minecraft.CameraMixin",
+		"sulkan.NativePackRuntimeAccessor",
+		"sulkan.NativePackRuntimeMixin",
+		"voxy.ModelFactoryMixin",
+		"voxy.VkCompositorMixin",
+		"voxy.VkModelStoreAccessor",
+		"voxy.VkRenderCoreMixin",
+		"voxy.VkTerrainRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
